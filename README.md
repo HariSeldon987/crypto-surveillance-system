@@ -25,6 +25,7 @@ graph LR
     C -->|Fail| E[Error Log]
     D -->|SQL Views| F[Streamlit Dashboard]
     B -->|Alert Trigger| G[Email Notification]
+```
 Extract: 使用 CCXT 库处理交易所 API 连接与限流（Rate Limiting）。
 Validate: 基于 Pandas 实现向量化的数据完整性与业务逻辑校验（如 Bid < Ask）。
 Load & Transform: 使用嵌入式列存数据库 DuckDB，通过 SQL View 实时计算失衡率指标。
